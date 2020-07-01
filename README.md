@@ -7,7 +7,9 @@ with feign follow the steps
 1. add a dependency 
 2.@EnableFeignClients("packaage name") - to scan for clients - put it in the main class 
 3.create a simple proxy 
-4.Annotate with class level @FeignClient(name="spring.application.name",url="localhost:8081")
+4.Annotate with class level @FeignClient(name="spring.application.name",url="localhost:8081") 
+  spring.application.name - name of the service which we are going to call 
+	url - is the one which we are going to talk to
 5.copy the same definition which is available in other service and paste in proxy class
 6.able to use that proxy to make the call to the service
 7.Utilize the proxy in the conteller with the help of Dependnecy Injection @Autowired 
@@ -17,3 +19,5 @@ ex: if the currency-exchange-service is offering a 15 services all the details o
 just in one place which is inside the proxy class
 
 just call the method on the proxy and get the details back.
+
+whenever using exactly speicify the path variable
