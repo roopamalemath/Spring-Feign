@@ -5,7 +5,7 @@ it was really a complex to write a lot of complex code, unnecessary duplicate to
 
 with feign follow the steps
 1. add a dependency 
-2.@EnableFeignClients
+2.@EnableFeignClients("packaage name") - to scan for clients - put it in the main class 
 3.create a simple proxy 
 4.Annotate with class level @FeignClient(name="spring.application.name",url="localhost:8081")
 5.copy the same definition which is available in other service and paste in proxy class
